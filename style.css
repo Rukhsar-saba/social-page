@@ -1,0 +1,242 @@
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+  --yellow: hsl(51, 92%, 67%);
+}
+
+body {
+  margin: 0;
+  font-family: "Spartan", sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+.container {
+  width: 77%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.heading-container {
+  padding: 0em 2em;
+}
+.comment-container {
+  align-items: center;
+  padding: 2em auto;
+}
+.heading h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  line-height: 1.2;
+  color: var(--very-dark-magenta);
+}
+.heading p {
+  text-align: center;
+  font-size: 0.7rem;
+  line-height: 1.7;
+  font-weight: 500;
+  color: var(--dark-grayish-magenta);
+}
+.star-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 350px;
+}
+.box1,
+.box2,
+.box3 {
+  background-color: var(--light-grayish-magenta);
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.reviews i,
+.report-guru i,
+.best-tech i {
+  color: var(--yellow);
+  padding-top: 0.6em;
+}
+.star-container p {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding-bottom: 0.7em;
+  color: var(--very-dark-magenta);
+}
+.box-container1,
+.box-container2,
+.box-container3 {
+  width: 17em;
+  height: 10em;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 1.5em;
+  background-color: var(--very-dark-magenta);
+}
+.revier-name {
+  display: flex;
+}
+.revier-name img {
+  width: 2.8em;
+  height: 2.8em;
+  border-radius: 50px;
+  margin-right: 1.2em;
+  margin-top: 0.5em;
+}
+.name {
+  color: var(--white);
+  font-size: 0.66rem;
+  font-weight: 600;
+  padding-top: -5em;
+}
+span {
+  color: var(--soft-pink);
+  font-size: 0.66rem;
+  font-weight: 500;
+}
+.review-point {
+  color: var(--light-grayish-magenta);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* -----media queries----- */
+@media (min-width: 675px) {
+  .container {
+    padding: 2em;
+  }
+  .heading-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0em;
+    padding-left: 1em;
+  }
+  .comment-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0em;
+  }
+  .heading {
+    width: 50%;
+    justify-content: left;
+    padding: 0em;
+    padding-top: 2em;
+  }
+  .heading h1 {
+    font-size: 2rem;
+    text-align: left;
+  }
+  .heading p {
+    font-size: 0.75rem;
+    text-align: left;
+    font-weight: 500;
+  }
+  .star-container {
+    width: 50%;
+    margin-left: 6em;
+    margin-top: 2em;
+    padding-right: 1.5em;
+    justify-content: right;
+  }
+  .box1,
+  .box2,
+  .box3 {
+    background-color: var(--light-grayish-magenta);
+    border-radius: 10px;
+    text-align: center;
+    max-width: 21.6em;
+    min-width: 18.5em;
+    margin-bottom: 1.2em;
+  }
+  .box1 {
+    margin-right: 2em;
+  }
+  .box2 {
+    margin-right: 1em;
+  }
+  .reviews {
+    background-color: var(--light-grayish-magenta);
+    border-radius: 10px;
+    margin: 1em;
+    padding-top: 0.5em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .box1 {
+    position: relative;
+    right: 4em;
+  }
+  .box2 {
+    position: relative;
+    right: 2em;
+  }
+  .star-container p {
+    padding-left: 1em;
+  }
+
+  .box-container1,
+  .box-container2,
+  .box-container3 {
+    width: 18em;
+    min-width: 8em;
+    height: 8em;
+    border-radius: 10px;
+    margin: 0.8em;
+  }
+  .name {
+    font-size: 0.5rem;
+  }
+  .name span {
+    font-size: 0.5rem;
+  }
+  .review-point {
+    font-size: 0.5rem;
+    font-weight: 500;
+  }
+  .box-container2 {
+    margin-top: 2em;
+  }
+  .box-container3 {
+    margin-top: 4em;
+  }
+}
+
+@media (min-width: 970px) {
+  .heading-container {
+    padding-left: 1em;
+  }
+  .heading h1 {
+    font-size: 2.4rem;
+  }
+  .heading p {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .star-container {
+    margin-left: 8em;
+    padding-right: 1em;
+  }
+  .box-container1,
+  .box-container2,
+  .box-container3 {
+    width: 16em;
+    height: 9em;
+  }
+  .review-point {
+    font-size: 0.6rem;
+  }
+  .name {
+    font-size: 0.66rem;
+  }
+  .name span {
+    font-size: 0.66rem;
+  }
+}
